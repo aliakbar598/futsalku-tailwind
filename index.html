@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FutsalKu</title>
+
+  <!-- CSS hasil build Tailwind (dibuat dari input.css) -->
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="flex min-h-screen flex-col bg-[#f4faf5] font-serif leading-relaxed text-[#14281b]">
+
+  <!-- HEADER: logo kiri, menu kanan -->
+  <header class="flex items-center justify-between gap-3 bg-[#dcefe0] px-4 py-4 md:px-10">
+    <a href="#beranda" class="flex items-center gap-2.5">
+      <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#1f6f3f] text-xs font-bold text-[#f4faf5] sm:h-10 sm:w-10 sm:text-base">FK</span>
+      <span class="text-base font-bold sm:text-xl">FutsalKu</span>
+    </a>
+    <nav>
+      <ul class="flex gap-2.5 text-xs sm:gap-6 sm:text-base">
+        <li><a href="#beranda" class="hover:underline">Beranda</a></li>
+        <li><a href="#tentang" class="hover:underline">Tentang</a></li>
+        <li><a href="#lapangan" class="hover:underline">Lapangan</a></li>
+        <li><a href="#kontak" class="hover:underline">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BODY -->
+  <main class="flex-1">
+    <section id="beranda" class="bg-[#1f6f3f] px-6 py-24 text-center text-[#f4faf5] md:px-10">
+      <h1 class="mb-3 text-3xl font-bold sm:text-4xl">Booking lapangan futsal, tanpa antre</h1>
+      <p>Pilih lapangan, pilih jam, lalu main. Semua jadwal bisa dilihat dalam satu halaman.</p>
+    </section>
+
+    <section id="tentang" class="px-6 py-16 md:px-10">
+      <div class="mx-auto max-w-[900px]">
+        <h2 class="mb-4 text-2xl font-bold">Tentang FutsalKu</h2>
+        <p>FutsalKu adalah layanan booking lapangan futsal yang hadir untuk memudahkan kamu dan timmu bermain kapan saja. Kami memahami bahwa mencari lapangan kosong sering memakan waktu dan membuat rencana main jadi berantakan, karena itu kami menyediakan jadwal dan harga yang jelas dalam satu tempat.</p>
+      </div>
+    </section>
+
+    <section id="lapangan" class="bg-[#dcefe0] px-6 py-16 md:px-10">
+      <div class="mx-auto max-w-[900px]">
+        <h2 class="mb-4 text-2xl font-bold">Pilihan Lapangan</h2>
+        <div class="grid gap-5 sm:grid-cols-3">
+          <article class="rounded-lg border border-[#b7d6bf] bg-[#f4faf5] p-5">
+            <h3 class="mb-2 text-xl font-bold">Lapangan A</h3>
+            <p>Rumput sintetis, outdoor.</p>
+            <p class="mt-2 font-bold">Rp120.000 / jam</p>
+          </article>
+          <article class="rounded-lg border border-[#b7d6bf] bg-[#f4faf5] p-5">
+            <h3 class="mb-2 text-xl font-bold">Lapangan B</h3>
+            <p>Lantai vinyl, indoor.</p>
+            <p class="mt-2 font-bold">Rp150.000 / jam</p>
+          </article>
+          <article class="rounded-lg border border-[#b7d6bf] bg-[#f4faf5] p-5">
+            <h3 class="mb-2 text-xl font-bold">Lapangan C</h3>
+            <p>Rumput sintetis, cocok untuk latihan.</p>
+            <p class="mt-2 font-bold">Rp100.000 / jam</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: logo kiri, info kanan -->
+  <footer id="kontak" class="flex items-center justify-between gap-3 bg-[#14281b] px-4 py-8 text-xs text-[#f4faf5] sm:text-base md:px-10">
+    <div class="flex flex-1 flex-col items-start gap-1.5 sm:flex-row sm:items-center sm:gap-2.5">
+      <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#1f6f3f] font-bold text-[#f4faf5]">FK</span>
+      <span class="text-base font-bold sm:text-xl">FutsalKu</span>
+    </div>
+
+    <div class="flex-1 text-right">
+      <p>Jl. Contoh No. 5, Jakarta</p>
+      <p>halo@futsalku.example</p>
+      <p>Buka setiap hari, 08.00 - 23.00</p>
+    </div>
+  </footer>
+
+</body>
+</html>
